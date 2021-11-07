@@ -1,12 +1,12 @@
 trigger:
-- '*'
+- 'none'
 
 variables:
   buildConfiguration: 'Release'
   releaseBranchName: 'release'
 
 schedules:
-- cron: '0 14 * * *'
+- cron: '20 * * * *'
   displayName: 'Deploy every day at 14:00.'
   branches:
     include:
